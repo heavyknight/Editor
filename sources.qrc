@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/gauss.png</file>
+        <file>img/download.png</file>
+        <file>img/video.png</file>
+        <file>img/edit2.png</file>
+        <file>img/film.png</file>
+        <file>img/filter.png</file>
+        <file>img/image.png</file>
+        <file>img/delete.png</file>
+        <file>img/prev.png</file>
+        <file>img/open.png</file>
+        <file>img/save.png</file>
+        <file>img/save_as.png</file>
+        <file>img/close.png</file>
+        <file>img/edit.png</file>
+        <file>img/edit3.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1108</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>281</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>10</y>
+      <width>1091</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1108</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuBlur">
+     <property name="title">
+      <string>Filters</string>
+     </property>
+     <addaction name="actionBlur_3"/>
+     <addaction name="actionGaussian_Blur_2"/>
+     <addaction name="actionMedian_Blur_2"/>
+     <addaction name="actionSobel"/>
+     <addaction name="actionLaplace"/>
+    </widget>
+    <widget class="QMenu" name="menuTransformed">
+     <property name="title">
+      <string>Geometrics Transformation</string>
+     </property>
+    </widget>
+    <widget class="QMenu" name="menuTransformed_2">
+     <property name="title">
+      <string>Transformed</string>
+     </property>
+     <addaction name="actionFFT_2"/>
+     <addaction name="actionWavelet_2"/>
+    </widget>
+    <widget class="QMenu" name="menuGlobal_Processing">
+     <property name="title">
+      <string>Global Processing</string>
+     </property>
+     <addaction name="actionto_Gray"/>
+     <addaction name="actionIlumination"/>
+    </widget>
+    <addaction name="menuGlobal_Processing"/>
+    <addaction name="menuBlur"/>
+    <addaction name="menuTransformed"/>
+    <addaction name="actionGeometrics_Transposes"/>
+    <addaction name="actionColors"/>
+    <addaction name="menuTransformed_2"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Us"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave_As"/>
+   <addaction name="actionSave"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/img/img/open.png</normaloff>:/img/img/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/img/img/save_as.png</normaloff>:/img/img/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As</string>
+   </property>
+  </action>
+  <action name="actionAbout_Us">
+   <property name="text">
+    <string>About This</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="sources.qrc">
+     <normaloff>:/img/img/save.png</normaloff>:/img/img/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionBlur">
+   <property name="text">
+    <string>Blur</string>
+   </property>
+  </action>
+  <action name="actionGaussian_Blur">
+   <property name="text">
+    <string>Gaussian Blur</string>
+   </property>
+  </action>
+  <action name="actionMedian_Blur">
+   <property name="text">
+    <string>Median Blur</string>
+   </property>
+  </action>
+  <action name="actionGaussian_Blur_2">
+   <property name="text">
+    <string>Gaussian Blur</string>
+   </property>
+  </action>
+  <action name="actionMedian_Blur_2">
+   <property name="text">
+    <string>Median Blur</string>
+   </property>
+  </action>
+  <action name="actionFFT">
+   <property name="text">
+    <string>FFT</string>
+   </property>
+  </action>
+  <action name="actionWavelet">
+   <property name="text">
+    <string>Wavelet</string>
+   </property>
+  </action>
+  <action name="actionGeometrics_Transposes">
+   <property name="text">
+    <string>Geometrics Transposes</string>
+   </property>
+  </action>
+  <action name="actionColors">
+   <property name="text">
+    <string>Colors</string>
+   </property>
+  </action>
+  <action name="actionFFT_2">
+   <property name="text">
+    <string>FFT</string>
+   </property>
+  </action>
+  <action name="actionWavelet_2">
+   <property name="text">
+    <string>Wavelet</string>
+   </property>
+  </action>
+  <action name="actionto_Gray">
+   <property name="text">
+    <string>to Gray</string>
+   </property>
+  </action>
+  <action name="actionBlur_3">
+   <property name="text">
+    <string>Blur</string>
+   </property>
+  </action>
+  <action name="actionSobel">
+   <property name="text">
+    <string>Sobel</string>
+   </property>
+  </action>
+  <action name="actionLaplace">
+   <property name="text">
+    <string>Laplace</string>
+   </property>
+  </action>
+  <action name="actionIlumination">
+   <property name="text">
+    <string>Ilumination</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="sources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
